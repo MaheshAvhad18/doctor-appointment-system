@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Inter",sans-serif;
+}
+
+body{
+    height:100vh;
+    background:
+        radial-gradient(circle at 10% 20%, rgba(0,180,219,.4), transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(0,131,176,.5), transparent 45%),
+        linear-gradient(135deg, #071b3d, #0d8aa7);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.main-container{
+    width:430px;
+}
+
+.title{
+    text-align:center;
+    font-family:"Playfair Display", serif;
+    color:#fff;
+    margin-bottom:25px;
+    letter-spacing:1px;
+}
+
+.form-card{
+    backdrop-filter: blur(15px);
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow:
+        0 0 40px rgba(0,255,255,.25),
+        inset 0 0 20px rgba(255,255,255,.12);
+    padding:35px;
+    border-radius:22px;
+}
+
+label{
+    color:#eafaff;
+    font-size:13px;
+    font-weight:500;
+    letter-spacing:.3px;
+}
+
+input, select{
+    width:100%;
+    background: rgba(255,255,255,.92);
+    border: none;
+    border-radius:10px;
+    padding:13px;
+    margin-top:5px;
+    margin-bottom:12px;
+    font-size:14px;
+    outline:none;
+    transition:.25s;
+}
+
+input:focus,select:focus{
+    box-shadow:0 0 0 2px #00ffd5;
+}
+
+button{
+    margin-top:10px;
+    width:100%;
+    background: linear-gradient(135deg, #00ffd5, #17a2ff);
+    color:#001b1a;
+    border:none;
+    padding:15px;
+    border-radius:15px;
+    font-size:16px;
+    font-weight:700;
+    cursor:pointer;
+    letter-spacing:.3px;
+    transition:.2s ease;
+}
+
+button:hover{
+    transform: scale(1.03);
+    box-shadow:0 8px 30px rgba(0,255,213,.4);
+}
+
+#status{
+    margin-top:15px;
+    color:#fff;
+    font-weight:600;
+    text-align:center;
+}
+
+@media(max-width:500px){
+    .main-container{
+        width:90%;
+    }
+}
