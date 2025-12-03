@@ -1,4 +1,4 @@
-const API_BASE = "https://acclivous-sectorial-towanda.ngrok-free.dev/api";
+const API_BASE = "/api/";
 
 const hospitalSelect = document.getElementById("hospital");
 const doctorSelect = document.getElementById("doctor");
